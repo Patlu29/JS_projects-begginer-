@@ -1,0 +1,25 @@
+{
+  "name": "js_projects-begginer-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1_one.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patlu29/JS_projects-begginer-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Patlu29/JS_projects-begginer-/issues"
+  },
+  "homepage": "https://github.com/Patlu29/JS_projects-begginer-#readme",
+  "dependencies": {
+    "node": "^18.20.7",
+    "prompt-sync": "^4.2.0"
+  }
+}
