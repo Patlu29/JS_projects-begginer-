@@ -1,13 +1,15 @@
 const prompt = require("prompt-sync")();
 
-const name = prompt("tell me your name: ");
+console.log("..WELCOME TO OUR MARKET GAME..")
+
+const name = prompt("\ntell me your name: ");
 
 console.log(
-  `i think your name is ${name.toUpperCase()} right? Let's get into the game..`
+  `\ni think your name is ${name.toUpperCase()} right? Let's get into the game..`
 );
 
 const shoulWePlay = function () {
-  decision = prompt("Do you want to play (Yes/No): ").toLowerCase();
+  decision = prompt("\nDo you want to play (Yes/No): ").toLowerCase();
   return decision;
 };
 
@@ -17,9 +19,9 @@ while (true) {
   choice = shoulWePlay();
 
   if (choice === "yes") {
-    console.log("Really....Let's start the game...!\n");
+    console.log("\nReally....Let's start the game...!");
     console.log(
-      "Now you're entered in a market which store you want explore...Select below"
+      "\nNow you're entered in a market which store you want explore...Select below"
     );
     while (true) {
       const shopList = [
@@ -30,7 +32,7 @@ while (true) {
       ];
       console.table(shopList);
       const shopNo = parseInt(
-        prompt("Which shop you want to go..? Enter(0-3) or Exit(any number): ")
+        prompt("\nWhich shop you want to go..? Enter(0-3) or Exit(any number): ")
       );
       if (shopNo < 0 || shopNo > 3) {
         break;
@@ -44,11 +46,11 @@ while (true) {
           "Meat",
           "Milk",
         ];
-        console.log("Today list.. Please select from below...");
+        console.log("\nToday list.. Please select from below...");
         while (true) {
           console.table(vegList);
           const selectedVeg = parseInt(
-            prompt("Which one you want..Enter(0-6) or Exit(any number): ")
+            prompt("\nWhich one you want..Enter(0-6) or Exit(any number): ")
           );
           if (selectedVeg === 6) {
             console.log(
@@ -70,7 +72,7 @@ while (true) {
           }
         }
       } else if (shopNo === 1) {
-        console.log("Welcome to our Jwellery shop..! check below today price");
+        console.log("\nWelcome to our Jwellery shop..! check below today price");
         const gold = {
           "one Kg": "$100",
         };
@@ -78,7 +80,7 @@ while (true) {
           console.table(gold);
           const goldWeight = parseInt(
             prompt(
-              "How many kg Gold you want... or Exit(enter negative numbers): "
+              "\nHow many kg Gold you want... or Exit(enter negative numbers): "
             )
           );
           if (goldWeight > 0) {
@@ -89,34 +91,34 @@ while (true) {
             );
             break;
           } else goldWeight < 0;
-          console.log("Thanks for visiting...!");
+          console.log("\nThanks for visiting...!");
           break;
         }
       } else if (shopNo === 2) {
         console.log(
-          "Welcome to our super market...! select below what you want..."
+          "\nWelcome to our super market...! select below what you want..."
         );
         const marketItems = ["Rice", "Suger", "weat", "Incrediants"];
         while (true) {
           console.table(marketItems);
           const itemSelected = parseInt(
-            prompt("which one you want Enter(0-3) or Exit(any number): ")
+            prompt("\nwhich one you want Enter(0-3) or Exit(any number): ")
           );
           if (itemSelected >= 0 && itemSelected <= 3) {
             console.log(
-              `Thanks for visiting us....here's your ${marketItems[
+              `\nThanks for visiting us....here's your ${marketItems[
                 itemSelected
               ].toUpperCase()} and your bill is $100`
             );
             break;
           } else {
-            console.log("Thank you see you later...!");
+            console.log("\nThank you see you later...!");
             break;
           }
         }
       } else if (shopNo === 3) {
         console.log(
-          "Welcom to PRAKASH shoe mart...! select your needs from below list.."
+          "\nWelcom to PRAKASH shoe mart...! select your needs from below list.."
         );
         const shoeList = {
           "0: Slipper": 80,
@@ -128,17 +130,17 @@ while (true) {
         while (true) {
           console.table(shoeList);
           const selectedItem = parseInt(
-            prompt("Which model you want Enter(0-3) or Exit(any number): ")
+            prompt("\nWhich model you want Enter(0-3) or Exit(any number): ")
           );
           if (selectedItem >= 0 && selectedItem <= 3) {
             console.log(
-              `Thanks for visiting us...here's your ${
+              `\nThanks for visiting us...here's your ${
                 shoe[selectedItem]
               } Cheppal and your bill is $${shoeList[shoe[selectedItem]]}...`
             );
             break;
           } else {
-            console.log("Thank you see you later..!");
+            console.log("\nThank you see you later..!");
             break;
           }
         }
