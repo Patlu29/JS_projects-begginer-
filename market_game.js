@@ -8,15 +8,15 @@ console.log(
   `\ni think your name is ${name.toUpperCase()} right? Let's get into the game..`
 );
 
-const shoulWePlay = function () {
-  decision = prompt("\nDo you want to play (Yes/No): ").toLowerCase();
+const shouldWePlay = function () {
+  let decision = prompt("\nDo you want to play (Yes/No): ").toLowerCase();
   return decision;
 };
 
 var choice;
 
 while (true) {
-  choice = shoulWePlay();
+  choice = shouldWePlay();
 
   if (choice === "yes") {
     console.log("\nReally....Let's start the game...!");
@@ -37,7 +37,7 @@ while (true) {
       if (shopNo < 0 || shopNo > 3) {
         break;
       } else if (shopNo === 0) {
-        vegList = [
+        const vegList = [
           "Tomato",
           "Potato",
           "Cauliflower",
@@ -90,9 +90,10 @@ while (true) {
               }...`
             );
             break;
-          } else goldWeight < 0;
-          console.log("\nThanks for visiting...!");
+          } else {
+            console.log("\nThanks for visiting...!");
           break;
+        }
         }
       } else if (shopNo === 2) {
         console.log(
