@@ -42,8 +42,23 @@ while (true) {
             break
         }
     }
-    }
-    }
+    }else if (shopNo === 1) {
+      console.log("Welcome to our Jwellary shop..! check below today price")
+      const gold = {
+        "one Kg": "$100",
+      }
+      while (true) {
+        console.table(gold)
+      const goldWeight = parseInt(prompt("How many kg Gold you want... or Exit(enter negative numbers): "))
+      if (goldWeight > 0) {
+          console.log(`\nthanks for visiting our shop...here's your ${goldWeight}KG gold and your bill is $${goldWeight * 100}...`)
+          break
+      }else (goldWeight < 0) 
+        console.log("Thanks for visiting...!")
+          break
+      }
+  }
+  }
   } else if (choice === "no") {
     console.log("Ok See you later...");
     break;
