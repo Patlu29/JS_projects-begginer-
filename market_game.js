@@ -92,33 +92,54 @@ while (true) {
           console.log("Thanks for visiting...!");
           break;
         }
-      }else if (shopNo === 2) {
-        console.log("Welcome to our super market...! select below what you want...")
-        const marketItems = ['Rice', 'Suger', 'weat', 'Incrediants']
+      } else if (shopNo === 2) {
+        console.log(
+          "Welcome to our super market...! select below what you want..."
+        );
+        const marketItems = ["Rice", "Suger", "weat", "Incrediants"];
         while (true) {
-          console.table(marketItems)
-          const itemSelected = parseInt(prompt("which one you want Enter(0-3) or Exit(any number): "))
+          console.table(marketItems);
+          const itemSelected = parseInt(
+            prompt("which one you want Enter(0-3) or Exit(any number): ")
+          );
           if (itemSelected >= 0 && itemSelected <= 3) {
-            console.log(`Thanks for visiting us....here's your ${marketItems[itemSelected].toUpperCase()} and your bill is $100`)
-            break
-          }else {
-            console.log("Thank you see you later...!")
-            break
+            console.log(
+              `Thanks for visiting us....here's your ${marketItems[
+                itemSelected
+              ].toUpperCase()} and your bill is $100`
+            );
+            break;
+          } else {
+            console.log("Thank you see you later...!");
+            break;
           }
         }
-      }else if (shopNo === 3) {
-        console.log("Welcom to PRAKASH shoe mart...! select your needs from below list..")
-        const shoeList = {'0: Slipper': 80, '1: Casual': 150, '2: Office': 200, '3: Sports': 220}
-        const shoe = ['Slipper', 'Casual', 'Office', 'Sports']
+      } else if (shopNo === 3) {
+        console.log(
+          "Welcom to PRAKASH shoe mart...! select your needs from below list.."
+        );
+        const shoeList = {
+          "0: Slipper": 80,
+          "1: Casual": 150,
+          "2: Office": 200,
+          "3: Sports": 220,
+        };
+        const shoe = ["Slipper", "Casual", "Office", "Sports"];
         while (true) {
-          console.table(shoeList)
-          const selectedItem = parseInt(prompt("Which model you want Enter(0-3) or Exit(any number): "))
+          console.table(shoeList);
+          const selectedItem = parseInt(
+            prompt("Which model you want Enter(0-3) or Exit(any number): ")
+          );
           if (selectedItem >= 0 && selectedItem <= 3) {
-            console.log(`Thanks for visiting us...here's your ${shoe[selectedItem]} Cheppal and your bill is $${shoeList[shoe[selectedItem]]}...`)
-            break
-          }else {
-            console.log("Thank you see you later..!")
-            break
+            console.log(
+              `Thanks for visiting us...here's your ${
+                shoe[selectedItem]
+              } Cheppal and your bill is $${shoeList[shoe[selectedItem]]}...`
+            );
+            break;
+          } else {
+            console.log("Thank you see you later..!");
+            break;
           }
         }
       }
