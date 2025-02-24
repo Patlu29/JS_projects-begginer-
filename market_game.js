@@ -20,7 +20,7 @@ while (true) {
     console.log("Really....Let's start the game...!\n");
     console.log("Now you're entered in a market which store you want explore...Select below")
     while (true) {
-    const shopList = ['Vegetable shop', 'Jwellary shop', 'Super market', 'Shoe mart']
+    const shopList = ['Vegetable shop', 'Jwellery shop', 'Super market', 'Shoe mart']
     console.table(shopList)
     const shopNo = parseInt(prompt("Which shop you want to go..? Enter(0-3) or Exit(any number): "))
     if (shopNo < 0 || shopNo > 3) {
@@ -43,7 +43,7 @@ while (true) {
         }
     }
     }else if (shopNo === 1) {
-      console.log("Welcome to our Jwellary shop..! check below today price")
+      console.log("Welcome to our Jwellery shop..! check below today price")
       const gold = {
         "one Kg": "$100",
       }
